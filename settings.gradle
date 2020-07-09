@@ -1,0 +1,3 @@
+include ':networkMonitorManager'
+include ':app'
+rootProject.name = "NetWatcher"
