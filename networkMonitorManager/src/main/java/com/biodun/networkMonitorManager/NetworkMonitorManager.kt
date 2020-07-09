@@ -1,4 +1,4 @@
-package com.biodun.networkMonitorManager.connectivity
+package com.biodun.networkMonitorManager
 
 import android.content.Context
 import android.content.Context.CONNECTIVITY_SERVICE
@@ -40,7 +40,9 @@ class NetworkMonitorManager(
         connectivityManager.apply {
             registerNetworkCallback(networkRequest, callback)
             if (connectivityManager.allNetworks.isEmpty()) {
-                requestNetwork(networkRequest, callback, REQUEST_TIME_OUT_MS)
+                requestNetwork(networkRequest, callback,
+                    REQUEST_TIME_OUT_MS
+                )
             }
         }
 
@@ -68,11 +70,12 @@ class NetworkMonitorManager(
 
             if (networkMonitorManager == null) {
                 synchronized(this) {
-                    networkMonitorManager = NetworkMonitorManager(
-                        context,
-                        DependencyProvider.provideConnectivityCallback(),
-                        DependencyProvider.provideNetworkRequestFactory()
-                    )
+                    networkMonitorManager =
+                        NetworkMonitorManager(
+                            context,
+                            DependencyProvider.provideConnectivityCallback(),
+                            DependencyProvider.provideNetworkRequestFactory()
+                        )
                 }
             }
             return networkMonitorManager as NetworkMonitorManager

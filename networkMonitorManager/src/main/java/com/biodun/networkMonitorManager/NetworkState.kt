@@ -1,4 +1,4 @@
-package com.biodun.networkMonitorManager.connectivity
+package com.biodun.networkMonitorManager
 
 sealed class NetworkState {
     object Available: NetworkState()

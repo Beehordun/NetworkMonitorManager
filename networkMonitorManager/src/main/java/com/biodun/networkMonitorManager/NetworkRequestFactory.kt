@@ -1,4 +1,4 @@
-package com.biodun.networkMonitorManager.connectivity
+package com.biodun.networkMonitorManager
 
 import android.net.NetworkCapabilities
 import android.net.NetworkRequest

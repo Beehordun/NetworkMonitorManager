@@ -5,9 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.annotation.RequiresApi
-import com.biodun.networkMonitorManager.connectivity.NetworkMonitorManager
-import com.biodun.networkMonitorManager.connectivity.NetworkState
-import com.biodun.networkMonitorManager.connectivity.NetworkType
+import com.biodun.networkMonitorManager.NetworkMonitorManager
+import com.biodun.networkMonitorManager.NetworkState
+import com.biodun.networkMonitorManager.NetworkType
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
