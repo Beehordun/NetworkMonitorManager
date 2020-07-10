@@ -1,6 +1,6 @@
 # NetworkMonitorManager
 
-An Android library for observing network connectivity as either Livedata or Flow. 
+An Android library for observing network connectivity as either Livedata or Flow. Observe WIFI and/or CELLULAR networks as Flow or Livedata
 
 # Installation
 
