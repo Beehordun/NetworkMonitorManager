@@ -36,7 +36,7 @@ To specify specific network(s), get an instance of NetworkMonitorManager this wa
  }
 ```
 
-2. **Register and Unregister the NetworkMonitorManager:**
+2. **Register and Unregister the NetworkMonitorManager callbacks:**
 
 ```
  @RequiresApi(Build.VERSION_CODES.O)
